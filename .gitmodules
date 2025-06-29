@@ -1,0 +1,3 @@
+[submodule "Telemetria"]
+	path = Telemetria
+	url = https://github.com/Adriamig/Telemetria.git
