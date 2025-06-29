@@ -978,7 +978,7 @@ TextureImporter:
       213: 4122708346689482152
     second: jungle tileset_324
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -995,9 +995,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -1007,8 +1010,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -1029,9 +1032,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -1043,6 +1052,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -1055,6 +1065,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -7895,9 +7906,334 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      jungle tileset_0: -337650094436226022
+      jungle tileset_1: 4762510025463220358
+      jungle tileset_10: -4748219608448842564
+      jungle tileset_100: -6293445690003984149
+      jungle tileset_101: 4605286849037894870
+      jungle tileset_102: -8205495877971456185
+      jungle tileset_103: 2489317275932803564
+      jungle tileset_104: -2178407726297744339
+      jungle tileset_105: -7066076303996645465
+      jungle tileset_106: -5539109297763266519
+      jungle tileset_107: 89566347755875027
+      jungle tileset_108: -6565531031980396783
+      jungle tileset_109: 5455333153081746348
+      jungle tileset_11: 6255656890204623732
+      jungle tileset_110: -7089193862420620396
+      jungle tileset_111: -4835444690842560125
+      jungle tileset_112: -8427719478486714797
+      jungle tileset_113: -3501990860891398332
+      jungle tileset_114: 6206817995508378943
+      jungle tileset_115: -3760071053133098819
+      jungle tileset_116: 3809595410242723109
+      jungle tileset_117: -5680095131818133082
+      jungle tileset_118: -699960354515508140
+      jungle tileset_119: -7210633306418021487
+      jungle tileset_12: -8856663237800934286
+      jungle tileset_120: 5356779972189555929
+      jungle tileset_121: -5037339064164948239
+      jungle tileset_122: 584416920342768362
+      jungle tileset_123: 1958371458622743036
+      jungle tileset_124: 4265799013361272572
+      jungle tileset_125: -1860816030463701866
+      jungle tileset_126: -8761702259331169203
+      jungle tileset_127: 8760148063038019694
+      jungle tileset_128: 6000354044213456293
+      jungle tileset_129: -4453009151922148827
+      jungle tileset_13: -7237579458346611564
+      jungle tileset_130: -3769730766294650903
+      jungle tileset_131: -3091026815855796979
+      jungle tileset_132: 5193396174810220646
+      jungle tileset_133: 6169032925751600046
+      jungle tileset_134: 9084696032551919838
+      jungle tileset_135: -9025184523845610555
+      jungle tileset_136: 2429849826050699825
+      jungle tileset_137: 5121913659093989484
+      jungle tileset_138: 4825976321723536419
+      jungle tileset_139: 8487318165019977566
+      jungle tileset_14: -3726219476323514782
+      jungle tileset_140: 4543384377182842689
+      jungle tileset_141: -5957738056347122114
+      jungle tileset_142: 4160693814885985445
+      jungle tileset_143: 485007957948665957
+      jungle tileset_144: 171142623276033373
+      jungle tileset_145: 3520831749346719011
+      jungle tileset_146: 3893042465511340907
+      jungle tileset_147: 61667839914680141
+      jungle tileset_148: 2382699108894916535
+      jungle tileset_149: 1620894630949717404
+      jungle tileset_15: 6520680041915987534
+      jungle tileset_150: 6257302360883743222
+      jungle tileset_151: -5758937565466683182
+      jungle tileset_152: -5429246262122751087
+      jungle tileset_153: 1878646899145598128
+      jungle tileset_154: -4086828093602855693
+      jungle tileset_155: -7408445724104444699
+      jungle tileset_156: -6661401072824043635
+      jungle tileset_157: 1145246576901180771
+      jungle tileset_158: 2261742259044636253
+      jungle tileset_159: -7917228502347951157
+      jungle tileset_16: -5458122804092721661
+      jungle tileset_160: -7215317022596889457
+      jungle tileset_161: -4835781808146353302
+      jungle tileset_162: 6040668144779451760
+      jungle tileset_163: -4539572001557455801
+      jungle tileset_164: -2274885448305152358
+      jungle tileset_165: 6649297930514252790
+      jungle tileset_166: -1929453638686819051
+      jungle tileset_167: 405939205485343059
+      jungle tileset_168: -8424106892025350729
+      jungle tileset_169: -7574392001665218045
+      jungle tileset_17: -8833861716742289968
+      jungle tileset_170: -3531462970877154599
+      jungle tileset_171: -8745096686344578765
+      jungle tileset_172: 1894204697069214429
+      jungle tileset_173: 5627246172508340600
+      jungle tileset_174: -4825268175956735809
+      jungle tileset_175: -7543170527323815424
+      jungle tileset_176: 8804015205943097464
+      jungle tileset_177: -7346544129965244639
+      jungle tileset_178: -2827440993298184683
+      jungle tileset_179: 7243133927804339289
+      jungle tileset_18: 1922136139609853226
+      jungle tileset_180: 1952018823788117901
+      jungle tileset_181: 6610190870047471881
+      jungle tileset_182: 5176680068482414889
+      jungle tileset_183: 7798500060345453230
+      jungle tileset_184: -8219187803172217793
+      jungle tileset_185: -6819557616479005999
+      jungle tileset_186: 2489814188103178491
+      jungle tileset_187: 4378632603756034917
+      jungle tileset_188: 4989450787889433630
+      jungle tileset_189: 5581417207036840818
+      jungle tileset_19: -3934263221575823159
+      jungle tileset_190: 8975145890486164876
+      jungle tileset_191: 7510603817110806528
+      jungle tileset_192: 5668297955701344718
+      jungle tileset_193: -6322211873697575163
+      jungle tileset_194: 5201435314675138344
+      jungle tileset_195: 7784689699296670380
+      jungle tileset_196: -431896403002808171
+      jungle tileset_197: -2220804306026087791
+      jungle tileset_198: 1894206308397016947
+      jungle tileset_199: 3322700667109177629
+      jungle tileset_2: 2841706884336108830
+      jungle tileset_20: -3261541911563217398
+      jungle tileset_200: 7981279181799018372
+      jungle tileset_201: -7378219046383667820
+      jungle tileset_202: 7108495419281083781
+      jungle tileset_203: 3712969644353993283
+      jungle tileset_204: 1365357820086809671
+      jungle tileset_205: -1248067275321748333
+      jungle tileset_206: 3539210610369045097
+      jungle tileset_207: -6613891766253772926
+      jungle tileset_208: -1390797032945919025
+      jungle tileset_209: -7602631547114296236
+      jungle tileset_21: -2387910127377212895
+      jungle tileset_210: -141766531084555338
+      jungle tileset_211: -7359834315441713447
+      jungle tileset_212: 4823752272202646700
+      jungle tileset_213: 1291482734545084349
+      jungle tileset_214: -2932457790415727817
+      jungle tileset_215: 445375694370178433
+      jungle tileset_216: 6610284454722651378
+      jungle tileset_217: -8154160411260038750
+      jungle tileset_218: -1038165568832410197
+      jungle tileset_219: -1724467322922896066
+      jungle tileset_22: -5465477971330731349
+      jungle tileset_220: -3969538844702020730
+      jungle tileset_221: 3877970107832603931
+      jungle tileset_222: -5431127664984028222
+      jungle tileset_223: -7709512523091698765
+      jungle tileset_224: 9017788634113837852
+      jungle tileset_225: 7785615367861834260
+      jungle tileset_226: -3762868622881645671
+      jungle tileset_227: 2280497708760194387
+      jungle tileset_228: -1270581646832790510
+      jungle tileset_229: 2051531262412020396
+      jungle tileset_23: 4424424743136084365
+      jungle tileset_230: -6633621876327177850
+      jungle tileset_231: -1696264377499370927
+      jungle tileset_232: -2272782307256529821
+      jungle tileset_233: -9071321721056079841
+      jungle tileset_234: 8443657288919854183
+      jungle tileset_235: -7525158256989978711
+      jungle tileset_236: -1686670540744117195
+      jungle tileset_237: 5416777298464827073
+      jungle tileset_238: -2437974521926900981
+      jungle tileset_239: -1516680271141469389
+      jungle tileset_24: 5049845495281047351
+      jungle tileset_240: -7082014383213737996
+      jungle tileset_241: 8361108416936054576
+      jungle tileset_242: -6400984847094381849
+      jungle tileset_243: -3116470330522820560
+      jungle tileset_244: -6490919190287242854
+      jungle tileset_245: -3150130045565599389
+      jungle tileset_246: -7769138230601670435
+      jungle tileset_247: -9069190832624085264
+      jungle tileset_248: 1360549101996768154
+      jungle tileset_249: -8926791904797191740
+      jungle tileset_25: 8720780663327681697
+      jungle tileset_250: 2417432440800653218
+      jungle tileset_251: 7182715272498508232
+      jungle tileset_252: -7282795005491950550
+      jungle tileset_253: 7466272982412865578
+      jungle tileset_254: 3433147148122319450
+      jungle tileset_255: -8804773203179440517
+      jungle tileset_256: 5826049903130588546
+      jungle tileset_257: -6001118043222360374
+      jungle tileset_258: 8939060756890877545
+      jungle tileset_259: 5582417513625531386
+      jungle tileset_26: 653053054627100677
+      jungle tileset_260: -5237920319898678756
+      jungle tileset_261: -9103326185060952649
+      jungle tileset_262: -2044593153269200098
+      jungle tileset_263: 6171241198502791103
+      jungle tileset_264: 5698353080927685227
+      jungle tileset_265: -4172082369025243510
+      jungle tileset_266: -3770362195541056458
+      jungle tileset_267: -5284197358561189126
+      jungle tileset_268: -8073158461287914518
+      jungle tileset_269: 2400859862667155172
+      jungle tileset_27: 2620094406820684301
+      jungle tileset_270: 1494979272168714491
+      jungle tileset_271: 2876266571876302085
+      jungle tileset_272: -6640680443174976413
+      jungle tileset_273: 8472168245363014692
+      jungle tileset_274: 7054558887600401515
+      jungle tileset_275: -6491787499613842179
+      jungle tileset_276: -4526618406227335143
+      jungle tileset_277: -1432799743123164718
+      jungle tileset_278: 359008968327348049
+      jungle tileset_279: 1096103615497043522
+      jungle tileset_28: 8362945715815971176
+      jungle tileset_280: -7759043476909831990
+      jungle tileset_281: -7753250079585324216
+      jungle tileset_282: -6950314501663085385
+      jungle tileset_283: 3436761002426217170
+      jungle tileset_284: -7932549010812090969
+      jungle tileset_285: 680541738216334316
+      jungle tileset_286: 5137395548090003775
+      jungle tileset_287: 420334272379170442
+      jungle tileset_288: 8802664654386876147
+      jungle tileset_289: -5272264723218704299
+      jungle tileset_29: 3361800803159264846
+      jungle tileset_290: -3043415727661962116
+      jungle tileset_291: 1762260192134173285
+      jungle tileset_292: -7035134913291325145
+      jungle tileset_293: 4064684711869546565
+      jungle tileset_294: -7916787279212132134
+      jungle tileset_295: 6971698021461479225
+      jungle tileset_296: 2232254179787540472
+      jungle tileset_297: -971488437051089615
+      jungle tileset_298: -223694705814024537
+      jungle tileset_299: 2552469854709038643
+      jungle tileset_3: 5702881312061213028
+      jungle tileset_30: 9120473017930384131
+      jungle tileset_300: 1347023754945930984
+      jungle tileset_301: -1433946502814397741
+      jungle tileset_302: 6906294565112092332
+      jungle tileset_303: 4920158609429957813
+      jungle tileset_304: -1336103840300384890
+      jungle tileset_305: -3632405904697469936
+      jungle tileset_306: 7540426152278502028
+      jungle tileset_307: -2962976773428220121
+      jungle tileset_308: -6262762512447901787
+      jungle tileset_309: -1790989230732310686
+      jungle tileset_31: 1313137552429796719
+      jungle tileset_310: 8792367843120632845
+      jungle tileset_311: -7703532920570482338
+      jungle tileset_312: -6077028321174916041
+      jungle tileset_313: 8813936226699931407
+      jungle tileset_314: -6487219347247352406
+      jungle tileset_315: -4474539919624028358
+      jungle tileset_316: -8170217082305917934
+      jungle tileset_317: -2727709627224675063
+      jungle tileset_318: 3542829987933476254
+      jungle tileset_319: -6059365227017526042
+      jungle tileset_32: 3544382550688355257
+      jungle tileset_320: -2039911567030297896
+      jungle tileset_321: -2311379777681344947
+      jungle tileset_322: 1379388286759262030
+      jungle tileset_323: 2307821987812448250
+      jungle tileset_324: 4122708346689482152
+      jungle tileset_33: 7908148505215056943
+      jungle tileset_34: 5207184051008443772
+      jungle tileset_35: 3866409388856742579
+      jungle tileset_36: 2633510209878608423
+      jungle tileset_37: 8286179452448618266
+      jungle tileset_38: 8656783618424156176
+      jungle tileset_39: 506754739258439834
+      jungle tileset_4: 1675147065547018455
+      jungle tileset_40: 1047555342866837215
+      jungle tileset_41: -3128606956277463256
+      jungle tileset_42: -6679945909522780475
+      jungle tileset_43: -7368236593403600201
+      jungle tileset_44: 8947873730276645762
+      jungle tileset_45: 9106667504730904358
+      jungle tileset_46: -7224922459909702387
+      jungle tileset_47: 6311435684577056125
+      jungle tileset_48: 8790743586218874517
+      jungle tileset_49: -3462489102839789751
+      jungle tileset_5: -6678837315819468931
+      jungle tileset_50: 6657030830961804888
+      jungle tileset_51: 5966684476672009493
+      jungle tileset_52: 8440940005385489248
+      jungle tileset_53: 1384964199983808513
+      jungle tileset_54: 8994061821738279165
+      jungle tileset_55: 3024575179133560656
+      jungle tileset_56: 4211980956929806046
+      jungle tileset_57: -2116255255579986094
+      jungle tileset_58: -825634007838134869
+      jungle tileset_59: -2910283796175685729
+      jungle tileset_6: 5884953701289943405
+      jungle tileset_60: -3561924012708239889
+      jungle tileset_61: -2465586933856328368
+      jungle tileset_62: -1881680289245850017
+      jungle tileset_63: 5889528350968402912
+      jungle tileset_64: -2562938220597857384
+      jungle tileset_65: 576673494491754856
+      jungle tileset_66: -956449524381827097
+      jungle tileset_67: -4700603035478415453
+      jungle tileset_68: -4676226501364224613
+      jungle tileset_69: 4248060113122943106
+      jungle tileset_7: 942894245647230796
+      jungle tileset_70: 4323894399119353811
+      jungle tileset_71: -5688661733220959827
+      jungle tileset_72: 1339757568285564864
+      jungle tileset_73: 3279589226839558859
+      jungle tileset_74: -3117749555904191233
+      jungle tileset_75: -6660688468522795381
+      jungle tileset_76: -67396284604809828
+      jungle tileset_77: -5421871041110087837
+      jungle tileset_78: 1519112463753869614
+      jungle tileset_79: -8560726493689774730
+      jungle tileset_8: -2015094521346789308
+      jungle tileset_80: -6685549883820306535
+      jungle tileset_81: -5368993054497686242
+      jungle tileset_82: 1741671065767112743
+      jungle tileset_83: 1555224567505441331
+      jungle tileset_84: 4991079267021768704
+      jungle tileset_85: 6915367212095034532
+      jungle tileset_86: -8602654102011546340
+      jungle tileset_87: -8889448731990107892
+      jungle tileset_88: -2314501836512731753
+      jungle tileset_89: -6520785803291630405
+      jungle tileset_9: -3398328481707034505
+      jungle tileset_90: 6840806242230244261
+      jungle tileset_91: 802470699166954269
+      jungle tileset_92: -8144344463363346235
+      jungle tileset_93: 6322163890294875368
+      jungle tileset_94: 8769103374364834381
+      jungle tileset_95: -8973047033856702217
+      jungle tileset_96: -6351199686061718619
+      jungle tileset_97: 5148329795829839047
+      jungle tileset_98: -8611117568059694374
+      jungle tileset_99: 3454288605526432118
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 

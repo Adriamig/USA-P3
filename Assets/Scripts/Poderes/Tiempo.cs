@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using TelemetriaTL;
+using TelemetriaTL.Events;
 
 /* Scrip para activar el poder del tiempo.
  * Poder: para el tiempo de todo el mapa.
@@ -32,11 +34,13 @@ public class Tiempo : MonoBehaviour
 
     public void CambiarFondo()      //  Trae el fondo del tiempo adelante.
     {
+        TelemetryManager.Instance().AddEvent(new FreezeStartEvent((int)transform.position.x, (int)transform.position.y));
         sprite.sortingOrder = 0;
     }
 
     public void CambiarFondo2()     //  Lleva el fondo del tiempo atrás.
     {
+        TelemetryManager.Instance().AddEvent(new FreezeEndEvent((int)transform.position.x, (int)transform.position.y));
         sprite.sortingOrder = -10;
         CancelInvoke();
     }  

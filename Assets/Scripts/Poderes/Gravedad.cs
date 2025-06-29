@@ -1,4 +1,6 @@
 ﻿using UnityEngine;
+using TelemetriaTL;
+using TelemetriaTL.Events;
 
 /* Script para cambiar la gravedad del mapa.
  * Poder: invierte la gravedad del personaje.
@@ -31,6 +33,9 @@ public class Gravedad : MonoBehaviour
                 GameManager.instance.SetGravedad(true);
             else
                 GameManager.instance.SetGravedad(false);
+
+            GravityUp direction = rb.gravityScale > 0 ? GravityUp.Down : GravityUp.Up;
+            TelemetryManager.Instance().AddEvent(new GravitySwitchEvent(direction, (int)transform.position.x, (int)transform.position.y));
         }
 
         if (!GameManager.instance.GetGravedad() && !GameManager.instance.GetEscalera())     //  En caso de no estar escalando.

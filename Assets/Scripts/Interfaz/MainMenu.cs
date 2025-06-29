@@ -1,5 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Text.RegularExpressions;
+using UnityEngine;
 using UnityEngine.SceneManagement;
+using TelemetriaTL;
 
 /* Script que implementa el menú
  * principal al principio del juego.
@@ -19,6 +21,6 @@ public class MainMenu : MonoBehaviour
     }
     public void Jugar(string nivel)   // Para jugar.
     {
-        SceneManager.LoadScene(nivel);
+        GameManager.instance.ChangeScene(nivel);
     }
 }

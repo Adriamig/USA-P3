@@ -1,4 +1,7 @@
-﻿using UnityEngine;
+﻿using System.Text.RegularExpressions;
+using TelemetriaTL;
+using TelemetriaTL.Events;
+using UnityEngine;
 using UnityEngine.SceneManagement;
 
 /* El único GameManager del juego.
@@ -35,6 +38,11 @@ public class GameManager : MonoBehaviour
     private bool paredL;
     private bool paredR;
 
+    // Telemetria
+    private LevelWin win;
+
+    [SerializeField] private string _fileName;
+
     void Awake()                                             //  Comprobar que solo hay un GameManager.
     {
         if (instance == null)
@@ -44,6 +52,36 @@ public class GameManager : MonoBehaviour
         }
 
         else Destroy(this.gameObject);
+    }
+
+    void Start()
+    {
+        win = LevelWin.Lose;
+        TelemetryManager.Init("TimeLess", 5.0f, TelemetriaTL.SerializeType.JSON, TelemetriaTL.PersistanceType.File, _fileName);
+    }
+
+    void Update()
+    {
+        TelemetryManager.Instance().Update(Time.deltaTime);
+    }
+
+    void OnApplicationQuit()
+    {
+        Match matchActual = Regex.Match(SceneManager.GetActiveScene().name, @"^Nivel(\d+)$");
+        if (matchActual.Success)
+        {
+            int nivelActual = int.Parse(matchActual.Groups[1].Value);
+            TelemetryManager.Instance().EndLevel(nivelActual, win);
+        }
+
+        TelemetryManager.Release();
+    }
+
+    public void QuitGame()
+    {
+#if UNITY_EDITOR
+        UnityEditor.EditorApplication.isPlaying = false;
+#endif
     }
 
     public void SetSuelo(bool isGrounded)                    //  Detecta el suelo. 
@@ -209,16 +247,34 @@ public class GameManager : MonoBehaviour
         reaparecePuerta = _reaparecePuerta;
     }
 
-    public void ChangeScene(string sceneName)               //  Cambia de la escena actual a otra.
+    public void ChangeScene(string sceneName) // Cambia de la escena actual a otra.
     {
-        if (sceneName != "")                                //  Para el botón reanudar.
+        if (!string.IsNullOrEmpty(sceneName)) // Para el botón reanudar.
         {
+            Match matchActual = Regex.Match(SceneManager.GetActiveScene().name, @"^Nivel(\d+)$");
+            if (matchActual.Success)
+            {
+                int nivelActual = int.Parse(matchActual.Groups[1].Value);
+                TelemetryManager.Instance().EndLevel(nivelActual, win);
+            }
+
+            Match matchNueva = Regex.Match(sceneName, @"^Nivel(\d+)$");
+            if (matchNueva.Success)
+            {
+                int nivelNuevo = int.Parse(matchNueva.Groups[1].Value);
+                TelemetryManager.Instance().StartLevel(nivelNuevo);
+
+            }
+
+            win = LevelWin.Lose;
+
             SceneManager.LoadScene(sceneName, LoadSceneMode.Single);
 
             tiempo = false;
             gravedad = false;
             escalera = false;
         }
+
         Time.timeScale = 1;
     }
 
@@ -241,18 +297,22 @@ public class GameManager : MonoBehaviour
     {
         if (partesIngrediente == 4 && SceneManager.GetActiveScene().name == "Nivel1")
         {
+            win = LevelWin.Win;
             ChangeScene("Nivel2");
         }
         else if (partesIngrediente == 4 && SceneManager.GetActiveScene().name == "Nivel2")
         {
+            win = LevelWin.Win;
             ChangeScene("Nivel3");
         }
         else if (partesIngrediente == 4 && SceneManager.GetActiveScene().name == "Nivel3")
         {
+            win = LevelWin.Win;
             ChangeScene("Nivel4");
         }
         else if (partesIngrediente == 4 && SceneManager.GetActiveScene().name == "Nivel4")
         {
+            win = LevelWin.Win;
             ChangeScene("FinDemo");
         }
 

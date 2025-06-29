@@ -75,7 +75,7 @@ TextureImporter:
       213: 1999220776904157072
     second: Fish_23
   externalObjects: {}
-  serializedVersion: 10
+  serializedVersion: 13
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -92,9 +92,12 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
+    flipGreenChannel: 0
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -104,8 +107,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -126,9 +129,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
+  swizzle: 50462976
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +149,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
@@ -152,6 +162,7 @@ TextureImporter:
     crunchedCompression: 0
     allowsAlphaSplitting: 0
     overridden: 0
+    ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
@@ -671,9 +682,33 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-  spritePackingTag: 
+    nameFileIdTable:
+      Fish_0: -1915776564401465818
+      Fish_1: -8217542319786499577
+      Fish_10: 4953700421485217503
+      Fish_11: 7569882410949808752
+      Fish_12: -9171614748212313213
+      Fish_13: 36384598983602322
+      Fish_14: -4465394044095388255
+      Fish_15: 4482993751660838607
+      Fish_16: 6765815950844319333
+      Fish_17: -8377783136665711729
+      Fish_18: -9064669143063488014
+      Fish_19: -6499505594818225024
+      Fish_2: 9156854346723684101
+      Fish_20: -1704664873255803116
+      Fish_21: 7050229737711613469
+      Fish_22: 4054749206892039571
+      Fish_23: 1999220776904157072
+      Fish_3: -3878289797822314810
+      Fish_4: 6406061711972274550
+      Fish_5: 900668292290427548
+      Fish_6: -1181076974519126152
+      Fish_7: 7704282712893456000
+      Fish_8: -6879157460212273855
+      Fish_9: -8276162684013312236
+  mipmapLimitGroupName: 
   pSDRemoveMatte: 0
-  pSDShowRemoveMatteOption: 0
   userData: 
   assetBundleName: 
   assetBundleVariant: 
